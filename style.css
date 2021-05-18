@@ -1,0 +1,286 @@
+@import url('https://fonts.googleapis.com/css2?family=Jost:wght@300&display=swap');
+
+/*font-family: 'Jost', sans-serif;*/
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+main {
+    justify-content: space-between;
+}
+
+.img_produtos {
+    width: auto;
+    height: 100px;
+}
+
+header {
+    background-color: rgb(0, 153, 255, 0.5);
+    position: fixed;
+    width: 100%;
+    ;
+    padding: 0;
+    text-align: center;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+}
+
+#logo {
+    width: 100px;
+    height: 100px;
+}
+
+p {
+    font-size: 9pt;
+    text-transform: uppercase;
+}
+
+a {
+    color: #eaeaec;
+    font-family: 'Jost', sans-serif;
+    text-decoration: none;
+    width: 60px;
+    height: 65px;
+    margin: 10px;
+    text-align: center;
+    padding-top: 10px;
+    padding-bottom: 15px;
+}
+
+a:hover {
+    color: #d4f38a;
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+
+.fas {
+    font-size: 22pt;
+}
+
+
+.categorias {
+    background-color: #d4f38a;
+    align-items: center;
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    flex-wrap: wrap;
+    border-radius: 15px;
+}
+
+.titulos {
+    font-family: 'Pattaya', sans-serif;
+    text-align: center;
+    color: rgb(0, 153, 255);
+    font-size: 35px;
+    padding-top: 110px;
+    padding-bottom: 7px;
+}
+
+figure {
+    margin: 30px;
+    align-items: center;
+    width: 20%;
+    padding-left: 45px;
+    align-items: center;
+}
+
+figcaption {
+    margin: 0;
+    width: 200px;
+    font-family: 'Jost', sans-serif;
+    text-align: center;
+    background-color: rgba(255, 255, 255, 0.342);
+    border-radius: 10px;
+    box-shadow: 5px 5px #888888;
+}
+
+.formulario {
+    width: 100%;
+    align-items: center;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    background-color: #e9e8e8;
+    border-radius: 0px 15px 0px 15px;
+
+}
+
+form {
+    text-align: center;
+}
+
+input {
+    border-top-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+    border-color: rgb(0, 153, 255);
+    margin: 20px;
+    background-color: transparent;
+    padding: 5px;
+}
+
+textarea,
+button {
+    align-items: center;
+    border-bottom: 2px solid;
+    border-top: 2px solid;
+    border-left: 2px solid;
+    border-right: 2px solid;
+    border-top-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+    border-color: rgb(0, 153, 255);
+    margin: 20px;
+    background-color: transparent;
+    padding: 5px;
+    resize: none;
+}
+
+input::placeholder {
+    color: rgb(0, 153, 255);
+}
+
+textarea::placeholder {
+    color: rgb(0, 153, 255);
+    padding-top: 13px;
+    font-size: 10.5pt;
+}
+
+
+footer {
+    color: #e9e8e8;
+    width: 100%;
+    height: 50px;
+    background-color: #0099ff;
+    border-radius: 15px 15px 0px 0px;
+    display: flex;
+    text-align: center;
+}
+
+footer p {
+    margin: 15px;
+    font-size: 15px;
+}
+
+span {
+
+    margin: 15px;
+}
+
+footer span {
+    font-size: 20pt;
+}
+
+footer span:hover {
+    color: #d4f38a;
+}
+
+.img_produtosG {
+    width: auto;
+    height: 100px;
+    padding-left: 80px;
+}
+
+@media screen and (max-width: 767px) {
+    html {
+        width: 100%;
+        justify-content: center;
+        padding: 0;
+        margin: 0;
+    }
+
+    header {
+        width: 100%;
+        position: fixed;
+        display: block;
+    }
+
+    nav {
+        margin: 0;
+        width: 100%;
+    }
+
+    nav a {
+        padding-bottom: 20px;
+        margin: 0;
+    }
+
+    .titulos {
+        padding-top: 197px;
+    }
+
+    figure {
+        margin: 0;
+        padding: 0;
+        width: 100%;
+        justify-content: center;
+        display: flex;
+    }
+
+    main {
+        margin: 0;
+        padding: 0;
+        width: 100%;
+    }
+
+    .img_produtos {
+        width: auto;
+        height: 80px;
+    }
+
+    .img_produtosG {
+        padding-left: 0;
+        padding-right: 47px;
+        width: auto;
+        height: 80px;
+    }
+
+    .categorias {
+        padding-bottom: 40px;
+    }
+
+    figure {
+        margin-top: 25px;
+    }
+
+    body {
+        width: 100%;
+    }
+
+    input {
+        padding: 5;
+        margin-left: 0px;
+    }
+
+    #nome-form {
+        margin-left: 0;
+    }
+
+    #email-form {
+        margin-left: 0;
+    }
+
+    footer {
+        width: 100%;
+        height: 100%;
+        border-radius: 0px;
+    }
+
+    footer>p {
+        font-size: 10px;
+    }
+
+    footer>span {
+        padding-left: 1px;
+        font-size: 15pt;
+    }
+}
